@@ -51,17 +51,20 @@ MLP de línea base).
 ## Cómo reproducirlo
 
 1. Abrir `Entrenar_y_Exportar_Modelo.ipynb` en [Google Colab](https://colab.research.google.com/).
-2. Tener el archivo `ventas_adventureworks.csv` en Google Drive (cualquier subcarpeta de "Mi
-   Drive" — el notebook lo busca automáticamente).
+2. El notebook busca automáticamente `ventas_adventureworks.csv` en tu Google Drive. Si no lo
+   encuentra (por ejemplo, si estás corriendo esto desde una cuenta distinta a la del grupo),
+   te va a pedir subirlo manualmente — el archivo está incluido en este mismo repositorio
+   como `ventas_adventureworks.csv.gz` (comprimido, por el límite de tamaño de GitHub;
+   pandas lo lee directo, sin necesidad de descomprimirlo a mano).
 3. Ejecutar todas las celdas en orden, de punta a punta.
 4. La última celda instala y lanza una interfaz de **Gradio**, que genera un link público
    temporal (`https://xxxxx.gradio.live`, válido ~72 horas) para probar el predictor de forma
    interactiva.
 
 > **Nota:** el link público de Gradio expira a las ~72 horas de generado y depende de que la
-> celda de Colab siga corriendo. Si querés probarlo y el link del video ya no funciona, corré
-> el notebook vos mismo — con el CSV del dataset, reproduce el modelo y genera un link nuevo
-> en pocos minutos (sin necesidad de GPU).
+> celda de Colab siga corriendo. Cualquiera (incluido el docente) puede reproducirlo desde
+> cero: no depende de accesos ni archivos que solo tenga el grupo — todo lo necesario
+> (notebook + dataset) está en este repositorio.
 
 ---
 
@@ -69,6 +72,7 @@ MLP de línea base).
 
 ```
 ├── Entrenar_y_Exportar_Modelo.ipynb   # Notebook único: datos, entrenamiento y demo con Gradio
+├── ventas_adventureworks.csv.gz       # Dataset comprimido (28 MB → 1,8 MB)
 ├── README.md                          # Este archivo
 ```
 
