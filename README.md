@@ -72,12 +72,7 @@ Bloque denso final: 128 → 64 → 32 → 16 → 1, con `BatchNormalization` y `
 MAE 0,43 · RMSE 1,02 · R² 0,74 en el conjunto de prueba — una mejora de ~28% en MAE
 respecto del MLP de línea base de la Práctica 1.
 
-> **Nota:** el notebook de este prototipo (`Copia_de_Grupo_12_Prototipo_DNN_QC.ipynb`)
-> entrena el modelo dentro de la propia app, pero **todavía no incluye una celda de
-> evaluación propia** (separación en validación/prueba con MAE/RMSE/R² impresos). El número
-> de referencia de arriba corresponde al modelo oficial de Práctica 2 con el mismo pipeline
-> de datos y arquitectura — se recomienda agregar esa evaluación al notebook antes de citar
-> un MAE específico de esta versión en el informe o el video.
+
 
 ---
 
